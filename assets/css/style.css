@@ -19,6 +19,10 @@ body {
   background: url("../images/graycanvas.png");
 }
 
+.breathe {
+  padding: 0px 5% 3% 5%;
+}
+
 p {
   color: #FFFEFD;
   margin: 2%;
@@ -97,6 +101,12 @@ li {
   border-bottom: 1px solid #FFFEFD;
 }
 
+.vertCenter {
+  /*padding-top: 2%;
+  padding-bottom: 2%;*/
+  margin-top: 3.5%;
+}
+
 #list {
   margin-bottom: 5%;
 
@@ -119,8 +129,8 @@ li {
   line-height: 30px;
   color: #fff;
   text-align: center;
-  background: #4aaaa5;
   border-bottom: 0;
+  background: rgba(255, 254, 253, 0.1);
 }
 
 
@@ -171,16 +181,62 @@ footer {
 
   margin-bottom: 20px;
   border-radius: 15px;
+  padding-bottom: 2%;
 }
+
+.box {
+  margin: 5%;
+}
+
+.roundPic {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-left: 2px solid #FFFEFD;
+  border-top: 2px solid #FFFEFD;
+  border-right: 2px solid #FFFEFD;
+}
+
+.roundText {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-left: 2px solid #FFFEFD;
+  border-bottom: 2px solid #FFFEFD;
+  border-right: 2px solid #FFFEFD;
+}
+
+
 
 
 /*media query*/
 
-/*@media only screen and (max-width: 991px) {
-  .body-fit {
-    float: none;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 10px;
+@media only screen and (max-width: 991px) {
+  .vertCenter {
+    padding-left: 0px;
+    padding-right: 0px;
   }
-}*/
+
+  .body-fit {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-brand {
+    float:none;
+  }
+  .navbar-header {
+    text-align: center;
+    margin-top: 2%;
+  }
+  .nav {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .vertCenter {
+    /*padding-top: 2%;
+    padding-bottom: 2%;*/
+    margin-top: 7%;
+  }
+}
