@@ -54,6 +54,12 @@ li {
   line-height: 70px;
 }
 
+.img-fit2 {
+  width: 40px;
+  height: 40px;
+  line-height: 70px;
+}
+
 .body-fit {
   border: 1px solid #FFFEFD;
   /*float: left;*/
